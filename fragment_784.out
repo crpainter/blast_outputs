@@ -1,0 +1,147 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_784
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_004718.3 SARS coronavirus Tor2, complete genome                    337     2e-91 
+NC_035191.1 Wencheng Sm shrew coronavirus isolate Xingguo-101 ORF...  95.3    1e-18 
+NC_048211.1 Wencheng Sm shrew coronavirus isolate Xingguo-74 ORF1...  95.3    1e-18 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      AAGGCTAGACTTTATTATGATTCAATGAGTTATGAGGATCAAGATGCACTTTTCGCATAT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  14971  AAGGCTAGACTTTATTATGATTCAATGAGTTATGAGGATCAAGATGCACTTTTCGCATAT  15030
+
+Query  61     ACAAAACGTAATGTCATCCCTACTATAACTCAAATGAATCTTAAGTATGCCATTAGTGCA  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15031  ACAAAACGTAATGTCATCCCTACTATAACTCAAATGAATCTTAAGTATGCCATTAGTGCA  15090
+
+Query  121    AAGAATAGAGCTCGCACCGTAGCTGGTGTCTCTATCTGTAGTACTATGACCAATAGACAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15091  AAGAATAGAGCTCGCACCGTAGCTGGTGTCTCTATCTGTAGTACTATGACCAATAGACAG  15150
+
+Query  181    TTTCATCAAAAATTATTGAA  200
+              ||||||||||||||||||||
+Sbjct  15151  TTTCATCAAAAATTATTGAA  15170
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 337 bits (182),  Expect = 2e-91
+ Identities = 194/200 (97%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      AAGGCTAGACTTTATTATGATTCAATGAGTTATGAGGATCAAGATGCACTTTTCGCATAT  60
+              |||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||
+Sbjct  14901  AAGGCTAGACTTTATTATGACTCAATGAGTTATGAGGATCAAGATGCACTTTTCGCGTAT  14960
+
+Query  61     ACAAAACGTAATGTCATCCCTACTATAACTCAAATGAATCTTAAGTATGCCATTAGTGCA  120
+              || || ||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  14961  ACTAAGCGTAATGTCATCCCTACTATAACTCAAATGAATCTTAAGTATGCCATTAGTGCA  15020
+
+Query  121    AAGAATAGAGCTCGCACCGTAGCTGGTGTCTCTATCTGTAGTACTATGACCAATAGACAG  180
+              |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  15021  AAGAATAGAGCTCGCACCGTAGCTGGTGTCTCTATCTGTAGTACTATGACAAATAGACAG  15080
+
+Query  181    TTTCATCAAAAATTATTGAA  200
+              |||||||| |||||||||||
+Sbjct  15081  TTTCATCAGAAATTATTGAA  15100
+
+
+>NC_035191.1 Wencheng Sm shrew coronavirus isolate Xingguo-101 ORF1ab polyprotein, 
+spike glycoprotein, envelope protein, membrane protein, 
+and nucleocapsid protein genes, complete cds
+Length=25995
+
+ Score = 95.3 bits (51),  Expect = 1e-18
+ Identities = 148/195 (76%), Gaps = 6/195 (3%)
+ Strand=Plus/Plus
+
+Query  1      AAGGCTAGACTTTATTATGATTCAATGAGTTATGAGGATCAAGATGCACTTTTCGCA-TA  59
+              || |||||| | ||||||||  |||||   ||||| || ||||||| | || |   | ||
+Sbjct  12701  AAAGCTAGATTATATTATGAAACAATGTCATATGAAGAACAAGATG-AATTATATAATTA  12759
+
+Query  60     TACAAAACGTAATGTCATCCCTACTATAACTCAAATGAATCTTAAGTATGCCATTAGTGC  119
+              |||||| ||||||||  | ||||| || || |||||||||||||||||||||||||||| 
+Sbjct  12760  TACAAAGCGTAATGTGGTTCCTACAATGACGCAAATGAATCTTAAGTATGCCATTAGTGG  12819
+
+Query  120    -AAAGAATAGAGCTCGCACCGTAGCTGGTGTCT-CTATCTGTAGTACTATGACCAATAGA  177
+               |||| || | ||| | || || | ||||||   ||   |||  ||||||||| | | | 
+Sbjct  12820  TAAAG-ATCGTGCTAGAACTGTGGGTGGTGTTAACTTAGTGTC-TACTATGACAACTCGT  12877
+
+Query  178    CAGTTTCATCAAAAA  192
+              |||| ||||||||||
+Sbjct  12878  CAGTATCATCAAAAA  12892
+
+
+>NC_048211.1 Wencheng Sm shrew coronavirus isolate Xingguo-74 ORF1ab polyprotein, 
+spike glycoprotein, envelope protein, membrane protein, 
+and nucleocapsid protein genes, complete cds
+Length=25984
+
+ Score = 95.3 bits (51),  Expect = 1e-18
+ Identities = 148/195 (76%), Gaps = 6/195 (3%)
+ Strand=Plus/Plus
+
+Query  1      AAGGCTAGACTTTATTATGATTCAATGAGTTATGAGGATCAAGATGCACTTTTCGCA-TA  59
+              || |||||| | ||||||||  |||||   ||||| || ||||||| | || |   | ||
+Sbjct  12685  AAAGCTAGATTATATTATGAAACAATGTCATATGAAGAACAAGATG-AATTATATAATTA  12743
+
+Query  60     TACAAAACGTAATGTCATCCCTACTATAACTCAAATGAATCTTAAGTATGCCATTAGTGC  119
+              |||||| ||||||||  | ||||| || || |||||||||||||||||||||||||||| 
+Sbjct  12744  TACAAAGCGTAATGTGGTTCCTACAATGACGCAAATGAATCTTAAGTATGCCATTAGTGG  12803
+
+Query  120    -AAAGAATAGAGCTCGCACCGTAGCTGGTGTCT-CTATCTGTAGTACTATGACCAATAGA  177
+               |||| || | ||| | || || | ||||||   ||   |||  ||||||||| | | | 
+Sbjct  12804  TAAAG-ATCGTGCTAGAACTGTGGGTGGTGTTAACTTAGTGTC-TACTATGACAACTCGT  12861
+
+Query  178    CAGTTTCATCAAAAA  192
+              |||| ||||||||||
+Sbjct  12862  CAGTATCATCAAAAA  12876
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

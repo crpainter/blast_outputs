@@ -1,0 +1,139 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_705
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_004718.3 SARS coronavirus Tor2, complete genome                    281     1e-74 
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         265     1e-69 
+NC_025217.1 Bat Hp-betacoronavirus/Zhejiang2013, complete genome      102     9e-21 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      TGGAAAGGTTATGGCTGTAGTTGTGATCAACTCCGCGAACCCATGCTTCAGTCAGCTGAT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  13391  TGGAAAGGTTATGGCTGTAGTTGTGATCAACTCCGCGAACCCATGCTTCAGTCAGCTGAT  13450
+
+Query  61     GCACAATCGTTTTTAAACGGGTTTGCGGTGTAAGTGCAGCCCGTCTTACACCGTGCGGCA  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  13451  GCACAATCGTTTTTAAACGGGTTTGCGGTGTAAGTGCAGCCCGTCTTACACCGTGCGGCA  13510
+
+Query  121    CAGGCACTAGTACTGATGTCGTATACAGGGCTTTTGACATCTACAATGATAAAGTAGCTG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  13511  CAGGCACTAGTACTGATGTCGTATACAGGGCTTTTGACATCTACAATGATAAAGTAGCTG  13570
+
+Query  181    GTTTTGCTAAATTCCTAAAA  200
+              ||||||||||||||||||||
+Sbjct  13571  GTTTTGCTAAATTCCTAAAA  13590
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 281 bits (152),  Expect = 1e-74
+ Identities = 185/201 (92%), Gaps = 2/201 (1%)
+ Strand=Plus/Plus
+
+Query  1      TGGAAAGGTTATGGCTGTAGTTGTGATCAACTCCGCGAACCCATGCTTCAGTCAGCTGAT  60
+              |||||||||||||||||||||||||| ||||||||||||||| || | ||||| || |||
+Sbjct  13321  TGGAAAGGTTATGGCTGTAGTTGTGACCAACTCCGCGAACCCTTGATGCAGTCTGCGGAT  13380
+
+Query  61     GCA-CAATCGTTTTTAAACGGGTTTGCGGTGTAAGTGCAGCCCGTCTTACACCGTGCGGC  119
+              ||| ||| ||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  13381  GCATCAA-CGTTTTTAAACGGGTTTGCGGTGTAAGTGCAGCCCGTCTTACACCGTGCGGC  13439
+
+Query  120    ACAGGCACTAGTACTGATGTCGTATACAGGGCTTTTGACATCTACAATGATAAAGTAGCT  179
+              ||||||||||||||||||||||| |||||||||||||| || ||||| || ||||| |||
+Sbjct  13440  ACAGGCACTAGTACTGATGTCGTCTACAGGGCTTTTGATATTTACAACGAAAAAGTTGCT  13499
+
+Query  180    GGTTTTGCTAAATTCCTAAAA  200
+              |||||||| || |||||||||
+Sbjct  13500  GGTTTTGCAAAGTTCCTAAAA  13520
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 265 bits (143),  Expect = 1e-69
+ Identities = 181/200 (91%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      TGGAAAGGTTATGGCTGTAGTTGTGATCAACTCCGCGAACCCATGCTTCAGTCAGCTGAT  60
+              |||||||||||||||||||||||||||||||||||||| ||| || | ||| ||||||||
+Sbjct  13220  TGGAAAGGTTATGGCTGTAGTTGTGATCAACTCCGCGAGCCCGTGATGCAGGCAGCTGAT  13279
+
+Query  61     GCACAATCGTTTTTAAACGGGTTTGCGGTGTAAGTGCAGCCCGTCTTACACCGTGCGGCA  120
+              || | | |||||||||||||||||||||||||||||| ||||||||||||||||||||||
+Sbjct  13280  GCCCCAGCGTTTTTAAACGGGTTTGCGGTGTAAGTGCGGCCCGTCTTACACCGTGCGGCA  13339
+
+Query  121    CAGGCACTAGTACTGATGTCGTATACAGGGCTTTTGACATCTACAATGATAAAGTAGCTG  180
+              ||||||| || ||||||||||| |||||||||||||| || || ||||| ||||| ||||
+Sbjct  13340  CAGGCACAAGCACTGATGTCGTTTACAGGGCTTTTGATATTTATAATGAGAAAGTTGCTG  13399
+
+Query  181    GTTTTGCTAAATTCCTAAAA  200
+              ||||||| || |||||||||
+Sbjct  13400  GTTTTGCAAAGTTCCTAAAA  13419
+
+
+>NC_025217.1 Bat Hp-betacoronavirus/Zhejiang2013, complete genome
+Length=31491
+
+ Score = 102 bits (55),  Expect = 9e-21
+ Identities = 139/179 (78%), Gaps = 7/179 (4%)
+ Strand=Plus/Plus
+
+Query  1      TGGAAAGGTTATGGCTGTAGTTGTGATCA-ACTCCGCGAACCCATGCTTCAGTCAGCTGA  59
+              |||| ||| ||||| || | |||||| || ||||||| | ||  |||||||  | || ||
+Sbjct  13857  TGGATAGGGTATGGTTGCAATTGTGA-CACACTCCGCCAGCCAGTGCTTCATGCTGCAGA  13915
+
+Query  60     TGCACAATCGTTTTTAAACGGGTTTGCGGTGTAAGTGCAGCCCGTCTTACACCGTGCGGC  119
+              || ||| |  |||||||||||||  ||||||||||||||||||||||||||||||| |||
+Sbjct  13916  TG-ACAGT--TTTTTAAACGGGTGCGCGGTGTAAGTGCAGCCCGTCTTACACCGTGTGGC  13972
+
+Query  120    ACAGGCACTAGTACTGATGTCGTA-TACAGGGCTTTTGACATCTACAATGATAAAGTAG  177
+              |  ||   |   ||||| |||||  || |||||||| ||| | ||||||  |||| |||
+Sbjct  13973  AGTGGTCTTTCCACTGACGTCGTCGTA-AGGGCTTTCGACCTGTACAATAGTAAAATAG  14030
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

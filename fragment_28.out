@@ -1,0 +1,77 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_28
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome        244     1e-63
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  93.5    5e-18
+
+
+>NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome
+Length=235646
+
+ Score = 244 bits (132),  Expect = 1e-63
+ Identities = 144/150 (96%), Gaps = 0/150 (0%)
+ Strand=Plus/Minus
+
+Query  1       CACCCCATTGACGTCAATGGGAGTTTGTTTTGGCACCAAAATCAACGGGACTTTCCAAAA  60
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||
+Sbjct  175198  CACCCCATTGACGTCAATGGGAGTTTGTTTTGGCACCAAATTCAACGGGACTTTCCAAAA  175139
+
+Query  61      TGTCGTAACAACTCCGCCCCATTGACGCAAATGGGCGGTAGGCGTGTACGGTGGGAGGTC  120
+               |||||||| |||||||||||||||||||||||||||||||||||| |||  |||||||||
+Sbjct  175138  TGTCGTAATAACTCCGCCCCATTGACGCAAATGGGCGGTAGGCGTTTACTATGGGAGGTC  175079
+
+Query  121     TATATAAGCAGAGCTGGTTTAGTGAACCGT  150
+               ||||||||||||||| ||||||||||||||
+Sbjct  175078  TATATAAGCAGAGCTCGTTTAGTGAACCGT  175049
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 93.5 bits (50),  Expect = 5e-18
+ Identities = 50/50 (100%), Gaps = 0/50 (0%)
+ Strand=Plus/Plus
+
+Query  151  ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTC  200
+            ||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1    ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTC  50
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,114 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_841
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         211     1e-53 
+NC_004718.3 SARS coronavirus Tor2, complete genome                    209     5e-53 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      CTACATGATGAGTTAACAGGACACATGTTAGACATGTATTCTGTTATGCTTACTAATGAT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  16111  CTACATGATGAGTTAACAGGACACATGTTAGACATGTATTCTGTTATGCTTACTAATGAT  16170
+
+Query  61     AACACTTCAAGGTATTGGGAACCTGAGTTTTATGAGGCTATGTACACACCGCATACAGTC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  16171  AACACTTCAAGGTATTGGGAACCTGAGTTTTATGAGGCTATGTACACACCGCATACAGTC  16230
+
+Query  121    TTACAGGCTGTTGGGGCTTGTGTTCTTTGCAATTCACAGACTTCATTAAGATGTGGTGCT  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  16231  TTACAGGCTGTTGGGGCTTGTGTTCTTTGCAATTCACAGACTTCATTAAGATGTGGTGCT  16290
+
+Query  181    TGCATACGTAGACCATTCTT  200
+              ||||||||||||||||||||
+Sbjct  16291  TGCATACGTAGACCATTCTT  16310
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 211 bits (114),  Expect = 1e-53
+ Identities = 146/162 (90%), Gaps = 0/162 (0%)
+ Strand=Plus/Plus
+
+Query  4      CATGATGAGTTAACAGGACACATGTTAGACATGTATTCTGTTATGCTTACTAATGATAAC  63
+              ||||||||| | || ||||||||||||||||||||||| || ||||| || |||||||||
+Sbjct  15943  CATGATGAGCTTACTGGACACATGTTAGACATGTATTCAGTCATGCTAACAAATGATAAC  16002
+
+Query  64     ACTTCAAGGTATTGGGAACCTGAGTTTTATGAGGCTATGTACACACCGCATACAGTCTTA  123
+              ||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||||| 
+Sbjct  16003  ACTTCTAGGTATTGGGAACCTGAGTTTTATGAGGCTATGTACACACCACATACAGTCTTG  16062
+
+Query  124    CAGGCTGTTGGGGCTTGTGTTCTTTGCAATTCACAGACTTCA  165
+              |||||||| || || |||||  | ||||||||||||||||||
+Sbjct  16063  CAGGCTGTAGGCGCGTGTGTGTTATGCAATTCACAGACTTCA  16104
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 209 bits (113),  Expect = 5e-53
+ Identities = 169/197 (86%), Gaps = 0/197 (0%)
+ Strand=Plus/Plus
+
+Query  2      TACATGATGAGTTAACAGGACACATGTTAGACATGTATTCTGTTATGCTTACTAATGATA  61
+              ||||||||||| | || || |||||||| ||||||||||| || ||||| ||||||||||
+Sbjct  16042  TACATGATGAGCTTACTGGCCACATGTTGGACATGTATTCCGTAATGCTAACTAATGATA  16101
+
+Query  62     ACACTTCAAGGTATTGGGAACCTGAGTTTTATGAGGCTATGTACACACCGCATACAGTCT  121
+              |||| ||| |||| ||||||||||||||||||||||||||||||||||| ||||||||||
+Sbjct  16102  ACACCTCACGGTACTGGGAACCTGAGTTTTATGAGGCTATGTACACACCACATACAGTCT  16161
+
+Query  122    TACAGGCTGTTGGGGCTTGTGTTCTTTGCAATTCACAGACTTCATTAAGATGTGGTGCTT  181
+              | |||||||| || ||||||||  | |||||||||||||||||| |  | || ||||| |
+Sbjct  16162  TGCAGGCTGTAGGTGCTTGTGTATTGTGCAATTCACAGACTTCACTTCGTTGCGGTGCCT  16221
+
+Query  182    GCATACGTAGACCATTC  198
+              | ||  | |||||||||
+Sbjct  16222  GTATTAGGAGACCATTC  16238
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

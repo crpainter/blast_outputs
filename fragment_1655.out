@@ -1,0 +1,68 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_1655
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_049925.1 Stx converting phage vB_EcoS_P27, complete genome         91.6    2e-17
+NC_049922.1 Stx converting phage vB_EcoS_ST2-8624, complete genome    76.8    5e-13
+
+
+>NC_049925.1 Stx converting phage vB_EcoS_P27, complete genome
+Length=61580
+
+ Score = 91.6 bits (49),  Expect = 2e-17
+ Identities = 49/49 (100%), Gaps = 0/49 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGTATTTATTCG  49
+              |||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23779  AGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGTATTTATTCG  23827
+
+
+>NC_049922.1 Stx converting phage vB_EcoS_ST2-8624, complete genome
+Length=62822
+
+ Score = 76.8 bits (41),  Expect = 5e-13
+ Identities = 41/41 (100%), Gaps = 0/41 (0%)
+ Strand=Plus/Minus
+
+Query  1      AGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGTA  41
+              |||||||||||||||||||||||||||||||||||||||||
+Sbjct  23124  AGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGTA  23084
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

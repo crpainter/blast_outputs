@@ -1,0 +1,76 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_1654
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_049925.1 Stx converting phage vB_EcoS_P27, complete genome         128     1e-28
+NC_049922.1 Stx converting phage vB_EcoS_ST2-8624, complete genome    113     4e-24
+
+
+>NC_049925.1 Stx converting phage vB_EcoS_P27, complete genome
+Length=61580
+
+ Score = 128 bits (69),  Expect = 1e-28
+ Identities = 69/69 (100%), Gaps = 0/69 (0%)
+ Strand=Plus/Plus
+
+Query  1      CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23759  CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  23818
+
+Query  61     ATTTATTCG  69
+              |||||||||
+Sbjct  23819  ATTTATTCG  23827
+
+
+>NC_049922.1 Stx converting phage vB_EcoS_ST2-8624, complete genome
+Length=62822
+
+ Score = 113 bits (61),  Expect = 4e-24
+ Identities = 61/61 (100%), Gaps = 0/61 (0%)
+ Strand=Plus/Minus
+
+Query  1      CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23144  CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  23085
+
+Query  61     A  61
+              |
+Sbjct  23084  A  23084
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

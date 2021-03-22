@@ -1,0 +1,119 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_14
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome        364     1e-99
+NC_003521.1 Panine herpesvirus 2 strain Heberling, complete genome    73.1    7e-12
+NC_012783.2 Cercopithecine herpesvirus 5 strain 2715, complete ge...  71.3    2e-11
+NC_033176.1 Cynomolgus cytomegalovirus isolate 31908, complete ge...  71.3    2e-11
+NC_006150.1 Macacine herpesvirus 3, complete genome                   71.3    2e-11
+
+
+>NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome
+Length=235646
+
+ Score = 364 bits (197),  Expect = 1e-99
+ Identities = 199/200 (99%), Gaps = 0/200 (0%)
+ Strand=Plus/Minus
+
+Query  1       GCCAATAGGGACTTTCCATTGACGTCAATGGGTGGAGTATTTACGGTAAACTGCCCACTT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  175478  GCCAATAGGGACTTTCCATTGACGTCAATGGGTGGAGTATTTACGGTAAACTGCCCACTT  175419
+
+Query  61      GGCAGTACATCAAGTGTATCATATGCCAAGTACGCCCCCTATTGACGTCAATGACGGTAA  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  175418  GGCAGTACATCAAGTGTATCATATGCCAAGTACGCCCCCTATTGACGTCAATGACGGTAA  175359
+
+Query  121     ATGGCCCGCCTGGCATTATGCCCAGTACATGACCTTATGGGACTTTCCTACTTGGCAGTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||
+Sbjct  175358  ATGGCCCGCCTGGCATTATGCCCAGTACATGACCTTACGGGACTTTCCTACTTGGCAGTA  175299
+
+Query  181     CATCTACGTATTAGTCATCG  200
+               ||||||||||||||||||||
+Sbjct  175298  CATCTACGTATTAGTCATCG  175279
+
+
+>NC_003521.1 Panine herpesvirus 2 strain Heberling, complete genome
+Length=241087
+
+ Score = 73.1 bits (39),  Expect = 7e-12
+ Identities = 42/43 (98%), Gaps = 1/43 (2%)
+ Strand=Plus/Minus
+
+Query  92      ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCGCCTGGC  134
+               ||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  177004  ACG-CCCCTATTGACGTCAATGACGGTAAATGGCCCGCCTGGC  176963
+
+
+>NC_012783.2 Cercopithecine herpesvirus 5 strain 2715, complete genome
+Length=226205
+
+ Score = 71.3 bits (38),  Expect = 2e-11
+ Identities = 44/47 (94%), Gaps = 0/47 (0%)
+ Strand=Plus/Minus
+
+Query  92      ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCGCCTGGCATTA  138
+               |||||||||||||||||||||||||||||||||||| | ||||| ||
+Sbjct  160570  ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCACTTGGCAGTA  160524
+
+
+>NC_033176.1 Cynomolgus cytomegalovirus isolate 31908, complete genome
+Length=224064
+
+ Score = 71.3 bits (38),  Expect = 2e-11
+ Identities = 44/47 (94%), Gaps = 0/47 (0%)
+ Strand=Plus/Minus
+
+Query  92      ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCGCCTGGCATTA  138
+               |||||||||||||||||||||||||||||||||||| | ||||| ||
+Sbjct  160216  ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCACTTGGCAGTA  160170
+
+
+>NC_006150.1 Macacine herpesvirus 3, complete genome
+Length=221454
+
+ Score = 71.3 bits (38),  Expect = 2e-11
+ Identities = 44/47 (94%), Gaps = 0/47 (0%)
+ Strand=Plus/Minus
+
+Query  92      ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCGCCTGGCATTA  138
+               |||||||||||||||||||||||||||||||||||| | ||||| ||
+Sbjct  161410  ACGCCCCCTATTGACGTCAATGACGGTAAATGGCCCACTTGGCAGTA  161364
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

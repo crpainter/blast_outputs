@@ -1,0 +1,114 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_50
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_004718.3 SARS coronavirus Tor2, complete genome                    209     5e-53 
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         124     2e-27 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1    ACGAGAAAACACACGTCCAACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTAC  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  291  ACGAGAAAACACACGTCCAACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTAC  350
+
+Query  61   GTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATG  120
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  351  GTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATG  410
+
+Query  121  GCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATG  180
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  411  GCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATG  470
+
+Query  181  TGTTCATCAAACGTTCGGAT  200
+            ||||||||||||||||||||
+Sbjct  471  TGTTCATCAAACGTTCGGAT  490
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 209 bits (113),  Expect = 5e-53
+ Identities = 171/200 (86%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1    ACGAGAAAACACACGTCCAACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTAC  60
+            ||||||||||||||||||||||||||||||||||  | |||||| | |||||||| || |
+Sbjct  290  ACGAGAAAACACACGTCCAACTCAGTTTGCCTGTCCTTCAGGTTAGAGACGTGCTAGTGC  349
+
+Query  61   GTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATG  120
+            ||||||| || ||||| ||||| |||| | |||| ||||||||| |||| || ||| |||
+Sbjct  350  GTGGCTTCGGGGACTCTGTGGAAGAGGCCCTATCGGAGGCACGTGAACACCTCAAAAATG  409
+
+Query  121  GCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATG  180
+            ||||||||||  |||||||  | |||||||||||  |||| || ||||||||||||||||
+Sbjct  410  GCACTTGTGGTCTAGTAGAGCTGGAAAAAGGCGTACTGCCCCAGCTTGAACAGCCCTATG  469
+
+Query  181  TGTTCATCAAACGTTCGGAT  200
+            ||||||| |||||||| |||
+Sbjct  470  TGTTCATTAAACGTTCTGAT  489
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 124 bits (67),  Expect = 2e-27
+ Identities = 139/174 (80%), Gaps = 4/174 (2%)
+ Strand=Plus/Plus
+
+Query  1    ACGAGAAAACACACGTCCAACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTAC  60
+            |||||||||||||||||||||||||||| |||||||| |||||||| |||||||||||||
+Sbjct  216  ACGAGAAAACACACGTCCAACTCAGTTTACCTGTTTTGCAGGTTCGTGACGTGCTCGTAC  275
+
+Query  61   GTGGCTTTGGAGACTCCGTGGAGGAGGTCT-TATCAGAGGCACGTCAACATCTTAAA-GA  118
+            |||| || || ||| |||| || |||| || |  | || ||||| |||||| ||||  ||
+Sbjct  276  GTGGATTCGGTGACACCGTAGAAGAGG-CTGTCGCTGAAGCACGCCAACAT-TTAATTGA  333
+
+Query  119  TGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACA  172
+             || || |||||| | || ||  |  | || || ||||| || ||||| |||||
+Sbjct  334  AGGAACATGTGGCATTGTTGATCTCCAGAAGGGTGTTTTACCCCAACTGGAACA  387
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

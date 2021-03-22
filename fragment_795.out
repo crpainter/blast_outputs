@@ -1,0 +1,135 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_795
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         228     1e-58 
+NC_048214.1 Duck coronavirus isolate DK/GD/27/2014, complete genome   117     3e-25 
+NC_006577.2 Human coronavirus HKU1, complete genome                   80.5    4e-14 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      GAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGGCACAACATGTTAAAAA  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15191  GAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGGCACAACATGTTAAAAA  15250
+
+Query  61     CTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGATTATCCTAAATGTGATA  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15251  CTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGATTATCCTAAATGTGATA  15310
+
+Query  121    GAGCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGTTCTTGCTCGCAAACATACAA  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15311  GAGCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGTTCTTGCTCGCAAACATACAA  15370
+
+Query  181    CGTGTTGTAGCTTGTCACAC  200
+              ||||||||||||||||||||
+Sbjct  15371  CGTGTTGTAGCTTGTCACAC  15390
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 228 bits (123),  Expect = 1e-58
+ Identities = 173/198 (87%), Gaps = 0/198 (0%)
+ Strand=Plus/Plus
+
+Query  3      GCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGGCACAACATGTTAAAAACT  62
+              || || || ||||| || || || |||||||||||||| ||||| |||||||||||||||
+Sbjct  15022  GCCACAGTTGTAATAGGCACTAGTAAATTCTATGGTGGCTGGCATAACATGTTAAAAACT  15081
+
+Query  63     GTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGATTATCCTAAATGTGATAGA  122
+              ||||| |||||||| ||||  ||| ||||||||||||||||||| || ||||||||||||
+Sbjct  15082  GTTTACAGTGATGTTGAAACTCCTAACCTTATGGGTTGGGATTACCCAAAATGTGATAGA  15141
+
+Query  123    GCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGTTCTTGCTCGCAAACATACAACG  182
+              |||||||||||||||||||| || ||||| |||||||||||||||||||||||||  || 
+Sbjct  15142  GCCATGCCTAACATGCTTAGGATAATGGCATCACTTGTTCTTGCTCGCAAACATAGTACT  15201
+
+Query  183    TGTTGTAGCTTGTCACAC  200
+              ||||||| | | ||||||
+Sbjct  15202  TGTTGTAACCTTTCACAC  15219
+
+
+>NC_048214.1 Duck coronavirus isolate DK/GD/27/2014, complete genome
+Length=27754
+
+ Score = 117 bits (63),  Expect = 3e-25
+ Identities = 111/134 (83%), Gaps = 4/134 (3%)
+ Strand=Plus/Plus
+
+Query  3      GCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGGCACAACATGTT-A-AAAA  60
+              ||| ||||||| ||||| |||| |||||| |||||||||||| |||| ||||| | ||| 
+Sbjct  14035  GCTCCTGTAGTTATTGGCACAACCAAATTTTATGGTGGTTGGGACAATATGTTGAGAAAT  14094
+
+Query  61     CTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGATTATCCTAAATGTGATA  120
+              ||  ||| || | ||| ||  ||||    |||||||||||||||||||||||||||||||
+Sbjct  14095  CTTGTTAAAG-G-TGTTGATGACCCAATTCTTATGGGTTGGGATTATCCTAAATGTGATA  14152
+
+Query  121    GAGCCATGCCTAAC  134
+              |||| |||||||||
+Sbjct  14153  GAGCAATGCCTAAC  14166
+
+
+>NC_006577.2 Human coronavirus HKU1, complete genome
+Length=29926
+
+ Score = 80.5 bits (43),  Expect = 4e-14
+ Identities = 98/125 (78%), Gaps = 2/125 (2%)
+ Strand=Plus/Plus
+
+Query  7      CTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGGCACAACATGTTAAAAACTGTT-  65
+              |||| || || ||||| |  ||||| |||||||||||| || | ||||||     | || 
+Sbjct  15320  CTGTTGTTATAGGAACCACTAAATTTTATGGTGGTTGGGACGATATGTTACGTCATCTTA  15379
+
+Query  66     TATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGATTATCCTAAATGTGATAGAGCC  125
+              || || ||||| || ||||||   |||||||||||||||||||||||||||||| | || 
+Sbjct  15380  TAAAG-GATGTTGACAACCCTGTTCTTATGGGTTGGGATTATCCTAAATGTGATCGTGCT  15438
+
+Query  126    ATGCC  130
+              |||||
+Sbjct  15439  ATGCC  15443
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

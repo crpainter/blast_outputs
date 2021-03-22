@@ -1,0 +1,160 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_794
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_004718.3 SARS coronavirus Tor2, complete genome                    274     2e-72 
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         235     8e-61 
+NC_048214.1 Duck coronavirus isolate DK/GD/27/2014, complete genome   117     3e-25 
+NC_006577.2 Human coronavirus HKU1, complete genome                   82.4    1e-14 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      ATCAATAGCCGCCACTAGAGGAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGG  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15171  ATCAATAGCCGCCACTAGAGGAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGG  15230
+
+Query  61     TTGGCACAACATGTTAAAAACTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTG  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15231  TTGGCACAACATGTTAAAAACTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTG  15290
+
+Query  121    GGATTATCCTAAATGTGATAGAGCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGT  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  15291  GGATTATCCTAAATGTGATAGAGCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGT  15350
+
+Query  181    TCTTGCTCGCAAACATACAA  200
+              ||||||||||||||||||||
+Sbjct  15351  TCTTGCTCGCAAACATACAA  15370
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 274 bits (148),  Expect = 2e-72
+ Identities = 180/196 (92%), Gaps = 0/196 (0%)
+ Strand=Plus/Plus
+
+Query  2      TCAATAGCCGCCACTAGAGGAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGT  61
+              ||||||||||||||||||||||||||||| ||||||||||||||||| || || ||||| 
+Sbjct  15102  TCAATAGCCGCCACTAGAGGAGCTACTGTGGTAATTGGAACAAGCAAGTTTTACGGTGGC  15161
+
+Query  62     TGGCACAACATGTTAAAAACTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGG  121
+              ||||| || ||||||||||||||||| |||||||||||||  || |||||||||||||||
+Sbjct  15162  TGGCATAATATGTTAAAAACTGTTTACAGTGATGTAGAAACTCCACACCTTATGGGTTGG  15221
+
+Query  122    GATTATCCTAAATGTGATAGAGCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGTT  181
+              |||||||| |||||||| ||||||||||||||||||||||| || |||||||| ||||||
+Sbjct  15222  GATTATCCAAAATGTGACAGAGCCATGCCTAACATGCTTAGGATAATGGCCTCTCTTGTT  15281
+
+Query  182    CTTGCTCGCAAACATA  197
+              ||||||||||||||||
+Sbjct  15282  CTTGCTCGCAAACATA  15297
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 235 bits (127),  Expect = 8e-61
+ Identities = 173/196 (88%), Gaps = 0/196 (0%)
+ Strand=Plus/Plus
+
+Query  2      TCAATAGCCGCCACTAGAGGAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGT  61
+              || |||||||| || ||||| || || || ||||| || || || |||||||||||||| 
+Sbjct  15001  TCTATAGCCGCTACAAGAGGTGCCACAGTTGTAATAGGCACTAGTAAATTCTATGGTGGC  15060
+
+Query  62     TGGCACAACATGTTAAAAACTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGG  121
+              ||||| |||||||||||||||||||| |||||||| ||||  ||| ||||||||||||||
+Sbjct  15061  TGGCATAACATGTTAAAAACTGTTTACAGTGATGTTGAAACTCCTAACCTTATGGGTTGG  15120
+
+Query  122    GATTATCCTAAATGTGATAGAGCCATGCCTAACATGCTTAGAATTATGGCCTCACTTGTT  181
+              ||||| || |||||||||||||||||||||||||||||||| || ||||| |||||||||
+Sbjct  15121  GATTACCCAAAATGTGATAGAGCCATGCCTAACATGCTTAGGATAATGGCATCACTTGTT  15180
+
+Query  182    CTTGCTCGCAAACATA  197
+              ||||||||||||||||
+Sbjct  15181  CTTGCTCGCAAACATA  15196
+
+
+>NC_048214.1 Duck coronavirus isolate DK/GD/27/2014, complete genome
+Length=27754
+
+ Score = 117 bits (63),  Expect = 3e-25
+ Identities = 117/143 (82%), Gaps = 4/143 (3%)
+ Strand=Plus/Plus
+
+Query  14     ACTAGAGGAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGGCACAACATG  73
+              ||||||   ||| ||||||| ||||| |||| |||||| |||||||||||| |||| |||
+Sbjct  14026  ACTAGAAATGCTCCTGTAGTTATTGGCACAACCAAATTTTATGGTGGTTGGGACAATATG  14085
+
+Query  74     TT-A-AAAACTGTTTATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGATTATCCTA  131
+              || | ||| ||  ||| || | ||| ||  ||||    ||||||||||||||||||||||
+Sbjct  14086  TTGAGAAATCTTGTTAAAG-G-TGTTGATGACCCAATTCTTATGGGTTGGGATTATCCTA  14143
+
+Query  132    AATGTGATAGAGCCATGCCTAAC  154
+              ||||||||||||| |||||||||
+Sbjct  14144  AATGTGATAGAGCAATGCCTAAC  14166
+
+
+>NC_006577.2 Human coronavirus HKU1, complete genome
+Length=29926
+
+ Score = 82.4 bits (44),  Expect = 1e-14
+ Identities = 113/147 (77%), Gaps = 2/147 (1%)
+ Strand=Plus/Plus
+
+Query  5      ATAGCCGCCACTAGAGGAGCTACTGTAGTAATTGGAACAAGCAAATTCTATGGTGGTTGG  64
+              ||||| || ||  |||| | | |||| || || ||||| |  ||||| ||||||||||||
+Sbjct  15298  ATAGCAGCTACCCGAGGTGTTCCTGTTGTTATAGGAACCACTAAATTTTATGGTGGTTGG  15357
+
+Query  65     CACAACATGTTAAAAACTGTT-TATAGTGATGTAGAAAACCCTCACCTTATGGGTTGGGA  123
+               || | ||||||     | || || || ||||| || ||||||   ||||||||||||||
+Sbjct  15358  GACGATATGTTACGTCATCTTATAAAG-GATGTTGACAACCCTGTTCTTATGGGTTGGGA  15416
+
+Query  124    TTATCCTAAATGTGATAGAGCCATGCC  150
+              |||||||||||||||| | || |||||
+Sbjct  15417  TTATCCTAAATGTGATCGTGCTATGCC  15443
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

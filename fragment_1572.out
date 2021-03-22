@@ -1,0 +1,81 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_1572
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_001669.1 Simian virus 40 complete genome                           111     1e-23
+NC_001653.2 Hepatitis delta virus, complete genome                    93.5    5e-18
+NC_042057.1 Enterobacteria phage DE3, complete genome                 73.1    7e-12
+
+
+>NC_001669.1 Simian virus 40 complete genome
+Length=5243
+
+ Score = 111 bits (60),  Expect = 1e-23
+ Identities = 60/60 (100%), Gaps = 0/60 (0%)
+ Strand=Plus/Minus
+
+Query  123   AATTTTTAAGTGTATAATGTGTTAAACTACTGATTCTAATTGTTTGTGTATTTTAGATTC  182
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  4627  AATTTTTAAGTGTATAATGTGTTAAACTACTGATTCTAATTGTTTGTGTATTTTAGATTC  4568
+
+
+>NC_001653.2 Hepatitis delta virus, complete genome
+Length=1682
+
+ Score = 93.5 bits (50),  Expect = 5e-18
+ Identities = 55/57 (96%), Gaps = 2/57 (4%)
+ Strand=Plus/Minus
+
+Query  1    CCTGGGCATCCGAAGGAGGACGCACGTCCACTCGGATGGCTAAGGGAGCAGCACACT  57
+            |||||||||||||||||||||||||||||||||||||||||||||||| ||| ||||
+Sbjct  866  CCTGGGCATCCGAAGGAGGACGCACGTCCACTCGGATGGCTAAGGGAG-AGC-CACT  812
+
+
+>NC_042057.1 Enterobacteria phage DE3, complete genome
+Length=42925
+
+ Score = 73.1 bits (39),  Expect = 7e-12
+ Identities = 39/39 (100%), Gaps = 0/39 (0%)
+ Strand=Plus/Plus
+
+Query  78    CGCCCTTCCCAACAGTTGCGCAGCCTGAATGGCGAATGG  116
+             |||||||||||||||||||||||||||||||||||||||
+Sbjct  1684  CGCCCTTCCCAACAGTTGCGCAGCCTGAATGGCGAATGG  1722
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

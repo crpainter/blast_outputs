@@ -1,0 +1,67 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_26
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome        318     8e-86
+
+
+>NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome
+Length=235646
+
+ Score = 318 bits (172),  Expect = 8e-86
+ Identities = 184/190 (97%), Gaps = 0/190 (0%)
+ Strand=Plus/Minus
+
+Query  1       GCGTGGATAGCGGTTTGACTCACGGGGATTTCCAAGTCTCCACCCCATTGACGTCAATGG  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  175238  GCGTGGATAGCGGTTTGACTCACGGGGATTTCCAAGTCTCCACCCCATTGACGTCAATGG  175179
+
+Query  61      GAGTTTGTTTTGGCACCAAAATCAACGGGACTTTCCAAAATGTCGTAACAACTCCGCCCC  120
+               |||||||||||||||||||| ||||||||||||||||||||||||||| |||||||||||
+Sbjct  175178  GAGTTTGTTTTGGCACCAAATTCAACGGGACTTTCCAAAATGTCGTAATAACTCCGCCCC  175119
+
+Query  121     ATTGACGCAAATGGGCGGTAGGCGTGTACGGTGGGAGGTCTATATAAGCAGAGCTGGTTT  180
+               ||||||||||||||||||||||||| |||  |||||||||||||||||||||||| ||||
+Sbjct  175118  ATTGACGCAAATGGGCGGTAGGCGTTTACTATGGGAGGTCTATATAAGCAGAGCTCGTTT  175059
+
+Query  181     AGTGAACCGT  190
+               ||||||||||
+Sbjct  175058  AGTGAACCGT  175049
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

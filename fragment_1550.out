@@ -1,0 +1,118 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_1550
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         298     1e-79 
+NC_004718.3 SARS coronavirus Tor2, complete genome                    294     1e-78 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGGCCTAAACTCATGCAGACCACACAAGGCAGATGGGCTATATAAACGTTTTCGCTTTTC  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  29526  AGGCCTAAACTCATGCAGACCACACAAGGCAGATGGGCTATATAAACGTTTTCGCTTTTC  29585
+
+Query  61     CGTTTACGATATATAGTCTACTCTTGTGCAGAATGAATTCTCGTAACTACATAGCACAAG  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  29586  CGTTTACGATATATAGTCTACTCTTGTGCAGAATGAATTCTCGTAACTACATAGCACAAG  29645
+
+Query  121    TAGATGTAGTTAACTTTAATCTCACATAGCAATCTTTAATCAGTGTGTAACATTAGGGAG  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  29646  TAGATGTAGTTAACTTTAATCTCACATAGCAATCTTTAATCAGTGTGTAACATTAGGGAG  29705
+
+Query  181    GACTTGAAAGAGCCACCACA  200
+              ||||||||||||||||||||
+Sbjct  29706  GACTTGAAAGAGCCACCACA  29725
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 298 bits (161),  Expect = 1e-79
+ Identities = 187/200 (94%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      AGGCCTAAACTCATGCAGACCACACAAGGCAGATGGGCTATATAAACGTTTTCGCTTTTC  60
+              ||||||||| |||||  |||||||||||||||||||||||| |||||||||||||| |||
+Sbjct  28911  AGGCCTAAATTCATGTTGACCACACAAGGCAGATGGGCTATGTAAACGTTTTCGCTATTC  28970
+
+Query  61     CGTTTACGATATATAGTCTACTCTTGTGCAGAATGAATTCTCGTAACTACATAGCACAAG  120
+              ||||||||||| ||||||||||||||||||||||||||||||||| ||| | ||||||||
+Sbjct  28971  CGTTTACGATACATAGTCTACTCTTGTGCAGAATGAATTCTCGTAGCTAAACAGCACAAG  29030
+
+Query  121    TAGATGTAGTTAACTTTAATCTCACATAGCAATCTTTAATCAGTGTGTAACATTAGGGAG  180
+              ||| | |||||||||||||||||||||||||||||||||||| |||||||||||||||||
+Sbjct  29031  TAGGTTTAGTTAACTTTAATCTCACATAGCAATCTTTAATCAATGTGTAACATTAGGGAG  29090
+
+Query  181    GACTTGAAAGAGCCACCACA  200
+              |||| |||||||||||||||
+Sbjct  29091  GACTGGAAAGAGCCACCACA  29110
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 294 bits (159),  Expect = 1e-78
+ Identities = 188/202 (93%), Gaps = 2/202 (1%)
+ Strand=Plus/Plus
+
+Query  1      AGGCCT-AA-ACTCATGCAGACCACACAAGGCAGATGGGCTATATAAACGTTTTCGCTTT  58
+              |||| | || |||||||  |||||||||||||||||||||||| |||||||||||||  |
+Sbjct  29381  AGGCATAAACACTCATGATGACCACACAAGGCAGATGGGCTATGTAAACGTTTTCGCAAT  29440
+
+Query  59     TCCGTTTACGATATATAGTCTACTCTTGTGCAGAATGAATTCTCGTAACTACATAGCACA  118
+              ||||||||||||| ||||||||||||||||||||||||||||||||||||| | ||||||
+Sbjct  29441  TCCGTTTACGATACATAGTCTACTCTTGTGCAGAATGAATTCTCGTAACTAAACAGCACA  29500
+
+Query  119    AGTAGATGTAGTTAACTTTAATCTCACATAGCAATCTTTAATCAGTGTGTAACATTAGGG  178
+              ||||| | |||||||||||||||||||||||||||||||||||| |||||||||||||||
+Sbjct  29501  AGTAGGTTTAGTTAACTTTAATCTCACATAGCAATCTTTAATCAATGTGTAACATTAGGG  29560
+
+Query  179    AGGACTTGAAAGAGCCACCACA  200
+              ||||||||||||||||||||||
+Sbjct  29561  AGGACTTGAAAGAGCCACCACA  29582
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

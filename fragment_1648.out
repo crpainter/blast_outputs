@@ -1,0 +1,109 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_1648
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_049925.1 Stx converting phage vB_EcoS_P27, complete genome         350     3e-95
+NC_049922.1 Stx converting phage vB_EcoS_ST2-8624, complete genome    329     4e-89
+NC_027984.1 Stx2 converting phage vB_EcoP_24B, complete genome        176     5e-43
+
+
+>NC_049925.1 Stx converting phage vB_EcoS_P27, complete genome
+Length=61580
+
+ Score = 350 bits (189),  Expect = 3e-95
+ Identities = 189/189 (100%), Gaps = 0/189 (0%)
+ Strand=Plus/Plus
+
+Query  1      GAAAATCTCGATAACTCAAAAAATACGCCCGGTAGTGATCTTATTTCATTATGGTGAAAG  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23639  GAAAATCTCGATAACTCAAAAAATACGCCCGGTAGTGATCTTATTTCATTATGGTGAAAG  23698
+
+Query  61     TTGGAACCTCTTACGTGCCGATCAACGTCTCATTTTCGCCAAAAGTTGGCCCAGGGCTTC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23699  TTGGAACCTCTTACGTGCCGATCAACGTCTCATTTTCGCCAAAAGTTGGCCCAGGGCTTC  23758
+
+Query  121    CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23759  CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  23818
+
+Query  181    ATTTATTCG  189
+              |||||||||
+Sbjct  23819  ATTTATTCG  23827
+
+
+>NC_049922.1 Stx converting phage vB_EcoS_ST2-8624, complete genome
+Length=62822
+
+ Score = 329 bits (178),  Expect = 4e-89
+ Identities = 180/181 (99%), Gaps = 0/181 (0%)
+ Strand=Plus/Minus
+
+Query  1      GAAAATCTCGATAACTCAAAAAATACGCCCGGTAGTGATCTTATTTCATTATGGTGAAAG  60
+              ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23264  GAAAATCTCGACAACTCAAAAAATACGCCCGGTAGTGATCTTATTTCATTATGGTGAAAG  23205
+
+Query  61     TTGGAACCTCTTACGTGCCGATCAACGTCTCATTTTCGCCAAAAGTTGGCCCAGGGCTTC  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23204  TTGGAACCTCTTACGTGCCGATCAACGTCTCATTTTCGCCAAAAGTTGGCCCAGGGCTTC  23145
+
+Query  121    CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  23144  CCGGTATCAACAGGGACACCAGGATTTATTTATTCTGCGAAGTGATCTTCCGTCACAGGT  23085
+
+Query  181    A  181
+              |
+Sbjct  23084  A  23084
+
+
+>NC_027984.1 Stx2 converting phage vB_EcoP_24B, complete genome
+Length=57677
+
+ Score = 176 bits (95),  Expect = 5e-43
+ Identities = 95/95 (100%), Gaps = 0/95 (0%)
+ Strand=Plus/Plus
+
+Query  1      GAAAATCTCGATAACTCAAAAAATACGCCCGGTAGTGATCTTATTTCATTATGGTGAAAG  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  22804  GAAAATCTCGATAACTCAAAAAATACGCCCGGTAGTGATCTTATTTCATTATGGTGAAAG  22863
+
+Query  61     TTGGAACCTCTTACGTGCCGATCAACGTCTCATTT  95
+              |||||||||||||||||||||||||||||||||||
+Sbjct  22864  TTGGAACCTCTTACGTGCCGATCAACGTCTCATTT  22898
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,114 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Refseq viruses representative genomes
+           13,450 sequences; 403,910,792 total letters
+
+
+
+Query= MT926411.1_fragment_1384
+
+Length=200
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isola...  370     2e-101
+NC_004718.3 SARS coronavirus Tor2, complete genome                    217     3e-55 
+NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome         161     1e-38 
+
+
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, 
+complete genome
+Length=29903
+
+ Score = 370 bits (200),  Expect = 2e-101
+ Identities = 200/200 (100%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1      GTATTGCTGGACACCATCTAGGACGCTGTGACATCAAGGACCTGCCTAAAGAAATCACTG  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  26971  GTATTGCTGGACACCATCTAGGACGCTGTGACATCAAGGACCTGCCTAAAGAAATCACTG  27030
+
+Query  61     TTGCTACATCACGAACGCTTTCTTATTACAAATTGGGAGCTTCGCAGCGTGTAGCAGGTG  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  27031  TTGCTACATCACGAACGCTTTCTTATTACAAATTGGGAGCTTCGCAGCGTGTAGCAGGTG  27090
+
+Query  121    ACTCAGGTTTTGCTGCATACAGTCGCTACAGGATTGGCAACTATAAATTAAACACAGACC  180
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  27091  ACTCAGGTTTTGCTGCATACAGTCGCTACAGGATTGGCAACTATAAATTAAACACAGACC  27150
+
+Query  181    ATTCCAGTAGCAGTGACAAT  200
+              ||||||||||||||||||||
+Sbjct  27151  ATTCCAGTAGCAGTGACAAT  27170
+
+
+>NC_004718.3 SARS coronavirus Tor2, complete genome
+Length=29751
+
+ Score = 217 bits (117),  Expect = 3e-55
+ Identities = 172/199 (86%), Gaps = 2/199 (1%)
+ Strand=Plus/Plus
+
+Query  3      ATTGCTGGACACCATCTAGGACGCTGTGACATCAAGGACCTGCCTAAAGAAATCACTGTT  62
+              || || ||||||   ||||| ||||||||||| ||||||||||| ||||| |||||||| 
+Sbjct  26845  ATGGCCGGACACTCCCTAGGGCGCTGTGACATTAAGGACCTGCCAAAAGAGATCACTGTG  26904
+
+Query  63     GCTACATCACGAACGCTTTCTTATTACAAATTGGGAGCTTCGCAGCGTGTAG-CAGGTGA  121
+              |||||||||||||||||||||||||||||||| ||||| ||||||||||||| ||  |||
+Sbjct  26905  GCTACATCACGAACGCTTTCTTATTACAAATTAGGAGCGTCGCAGCGTGTAGGCAC-TGA  26963
+
+Query  122    CTCAGGTTTTGCTGCATACAGTCGCTACAGGATTGGCAACTATAAATTAAACACAGACCA  181
+               |||||||||||||||||||  |||||| | ||||| |||||||||||||| ||||||||
+Sbjct  26964  TTCAGGTTTTGCTGCATACAACCGCTACCGTATTGGAAACTATAAATTAAATACAGACCA  27023
+
+Query  182    TTCCAGTAGCAGTGACAAT  200
+                || ||||||  ||||||
+Sbjct  27024  CGCCGGTAGCAACGACAAT  27042
+
+
+>NC_014470.1 Bat coronavirus BM48-31/BGR/2008, complete genome
+Length=29276
+
+ Score = 161 bits (87),  Expect = 1e-38
+ Identities = 119/135 (88%), Gaps = 0/135 (0%)
+ Strand=Plus/Plus
+
+Query  1      GTATTGCTGGACACCATCTAGGACGCTGTGACATCAAGGACCTGCCTAAAGAAATCACTG  60
+              |||| |||||||||   || |||||||||||||| |||||||| ||||||||||||||||
+Sbjct  26762  GTATGGCTGGACACTCCCTTGGACGCTGTGACATTAAGGACCTCCCTAAAGAAATCACTG  26821
+
+Query  61     TTGCTACATCACGAACGCTTTCTTATTACAAATTGGGAGCTTCGCAGCGTGTAGCAGGTG  120
+              |||||||||||||||| || |||||||||| ||| ||||| || ||||||||||||  ||
+Sbjct  26822  TTGCTACATCACGAACTCTATCTTATTACAGATTAGGAGCCTCCCAGCGTGTAGCATCTG  26881
+
+Query  121    ACTCAGGTTTTGCTG  135
+              | |||||||||||||
+Sbjct  26882  ATTCAGGTTTTGCTG  26896
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 70219630008
+
+
+  Database: Refseq viruses representative genomes
+    Posted date:  Mar 6, 2021  10:11 AM
+  Number of letters in database: 403,910,792
+  Number of sequences in database:  13,450
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
